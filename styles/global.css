@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    --ff01: "Big Shoulders Display", sans-serif;
+    --ff02: "Lexend Deca", sans-serif;
+    --emphasis: 700 40px var(--ff01);
+    --text: 400 15px/25px var(--ff02);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font: var(--text);
+    color: var(--transparent-white);
+
+    & h1 {
+        font: var(--emphasis);
+        color: var(--very-light-gray);
+    }
+}

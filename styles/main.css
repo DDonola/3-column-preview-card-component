@@ -1,0 +1,85 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    & div.container {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    & div.card {
+        display: flex;
+        flex-direction: column;
+        width: 307px;
+        padding: 48px;
+
+        & img {
+            width: 64px;
+            margin-bottom: 35px;
+        }
+
+        & h1 {
+            margin-bottom: 25px;
+        }
+
+        & p {
+            margin-bottom: 83px;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 146px;
+            height: 48px;
+            border-radius: 50px;
+            background-color: var(--very-light-gray);
+            text-decoration: none;
+
+            &:hover {
+                background-color: inherit;
+                border: solid var(--very-light-gray);
+            } 
+        }
+    }
+}
+
+div#sedans {
+    background-color: var(--bright-orange);
+
+    & a {
+        color: var(--bright-orange);
+
+        &:hover {
+            color: var(--transparent-white);
+        } 
+    }
+}
+
+div#suvs {
+    background-color: var(--dark-cyan);
+
+    & a {
+        color: var(--dark-cyan);
+
+        &:hover {
+            color: var(--transparent-white);
+        } 
+    }
+}
+
+div#luxury {
+    background-color: var(--very-dark-cyan);
+
+    & a {
+        color: var(--very-dark-cyan);
+
+        &:hover {
+            color: var(--transparent-white);
+        } 
+    }
+}
